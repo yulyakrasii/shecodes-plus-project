@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SheCodes</title>
+    <link rel="stylesheet" href="src/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/609b72f518.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant:wght@300&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Weather Forecast</h1>
+      <form id="search-form">
+        <div class="input-group flex-nowrap city-form">
+          <div class="col-4">
+            <input
+              id="city-input"
+              type="text"
+              class="form-control"
+              placeholder="Enter your city..."
+            />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary" id="search-button">
+          Search
+        </button>
+        <button
+          type="button"
+          class="btn btn-light"
+          id="current-location-button"
+        >
+          Current Location
+        </button>
+      </form>
+      <br />
+      <h2>Bila Tserkva</h2>
+      <p id="now">Now</p>
+      <h3 id="temperature-link">
+        <p id="current-temperature">24°</p>
+        <a href="#" id="celsius-temperature">C</a>/<a
+          href="#"
+          id="fahrenheit-temperature"
+          >F</a
+        >
+      </h3>
+      <div class="container">
+        <div class="row g-2">
+          <div class="col-6 w-25">
+            <div class="p-3 border bg-light">
+              <h5>Mon, 15th</h5>
+              <p>24°C</p>
+            </div>
+          </div>
+          <div class="col-6 w-25">
+            <div class="p-3 border bg-light">
+              <h5>Tue, 16th</h5>
+              <p>24°C</p>
+            </div>
+          </div>
+          <div class="col-6 w-25">
+            <div class="p-3 border bg-light">
+              <h5>Wed, 17th</h5>
+              <p>24°C</p>
+            </div>
+          </div>
+          <div class="col-6 w-25">
+            <div class="p-3 border bg-light">
+              <h5>Thu, 18th</h5>
+              <p>24°C</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <p class="end-line">Coded by Yulia Krasii</p>
+    </div>
+    <a id="git-link" href="https://github.com/yulyakrasii/shecodes-plus-project"
+      >Open source code
+    </a>
+    <script src="script.js"></script>
+  </body>
+</html>

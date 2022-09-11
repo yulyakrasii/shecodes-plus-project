@@ -1,0 +1,65 @@
+h1 {
+  font-family: "Playfair Display", serif;
+  padding-top: 30px;
+  text-align: center;
+}
+.city-form {
+  font-family: "Playfair Display", serif;
+  padding: 0px 0px 10px 200px;
+}
+h2 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+h3 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  padding: 10px 20px 20px 10px;
+}
+h5 {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+p {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.end-line {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+body {
+  background-color: #f0ece2 !important;
+}
+.card {
+  background-color: #dfd3c3 !important;
+  display: grid;
+}
+#search-button {
+  font-family: "Playfair Display", serif;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 17px;
+  border-color: #dfd3c3;
+  background-color: #674f04;
+}
+#current-location-button {
+  font-family: "Playfair Display", serif;
+  display: block;
+  margin: 0 auto;
+  border-radius: 4px;
+  font-size: 17px;
+  border-color: #dfd3c3;
+  background-color: #674f04;
+  color: #f0ece2;
+}
+#celsius-temperature,
+#fahrenheit-temperature {
+  color: #674f04;
+}
+#git-link {
+  display: block;
+  margin: 0 auto;
+  font-family: "Playfair Display", serif;
+}

@@ -5,9 +5,7 @@ h1 {
 }
 .city-form {
   font-family: "Playfair Display", serif;
-  display: block;
-  margin: 0 auto;
-  padding: 0px 0px 10px 20px;
+  padding-bottom: 10px;
 }
 h2 {
   font-family: "Playfair Display", serif;
@@ -50,6 +48,7 @@ body {
   font-family: "Playfair Display", serif;
   display: block;
   margin: 0 auto;
+  margin-top: 5px;
   border-radius: 4px;
   font-size: 17px;
   border-color: #dfd3c3;

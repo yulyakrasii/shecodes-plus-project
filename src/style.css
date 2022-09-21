@@ -5,7 +5,9 @@ h1 {
 }
 .city-form {
   font-family: "Playfair Display", serif;
-  padding: 0px 0px 10px 200px;
+  display: block;
+  margin: 0 auto;
+  padding: 0px 0px 10px 20px;
 }
 h2 {
   font-family: "Playfair Display", serif;
@@ -62,4 +64,14 @@ body {
   display: block;
   margin: 0 auto;
   font-family: "Playfair Display", serif;
+}
+
+.weather-app-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+.weather-app {
+  padding: 20px;
+  border: 1px solid #674f04;
+  border-radius: 4px;
 }

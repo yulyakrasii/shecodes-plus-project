@@ -81,4 +81,12 @@ body {
 ul {
   display: block;
   margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  padding-right: 35px;
+  font-family: "Playfair Display", serif;
+}
+#main-icon {
+  display: inline-block;
+  margin: 0 auto;
 }

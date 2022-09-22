@@ -34,6 +34,7 @@ body {
 .card {
   background-color: #dfd3c3 !important;
   display: grid;
+  border: 1px solid;
 }
 #search-button {
   font-family: "Playfair Display", serif;
@@ -58,7 +59,10 @@ body {
 #celsius-temperature,
 #fahrenheit-temperature {
   color: #674f04;
+  position: relative;
+  font-size: 16px;
 }
+
 #git-link {
   display: block;
   margin: 0 auto;
@@ -73,4 +77,8 @@ body {
   padding: 20px;
   border: 1px solid #674f04;
   border-radius: 4px;
+}
+ul {
+  display: block;
+  margin: 0 auto;
 }

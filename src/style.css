@@ -72,9 +72,7 @@ body {
 }
 
 #git-link {
-  display: block;
-  margin: 0 auto;
-  font-family: "Playfair Display", serif;
+  text-align: center;
 }
 
 .weather-app-wrapper {

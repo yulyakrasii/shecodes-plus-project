@@ -86,7 +86,9 @@ ul {
   padding-right: 35px;
   font-family: "Playfair Display", serif;
 }
-#main-icon {
-  display: inline-block;
+#icon {
+  display: block;
   margin: 0 auto;
+  width: 70px;
+  height: 70px;
 }

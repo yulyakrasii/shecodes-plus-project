@@ -59,9 +59,15 @@ showCelsius.addEventListener("click", changeFahrenheit);
 
 function getCurrentTemperature(response) {
   let temperatureDisplay = document.querySelector("#current-temperature");
-  temperatureDisplay.innerHTML = `${response.data.main.temp}`;
+  temperatureDisplay.innerHTML = Math.round(`${response.data.main.temp}`);
   let location = document.querySelector("h2");
   location.innerHTML = `${response.data.name}`;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(`${response.data.wind.speed}`);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.main.humidity}`;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = `${response.data.weather[0].description}`;
 }
 
 function showCurrentLocation(position) {

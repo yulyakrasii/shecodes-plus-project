@@ -27,7 +27,7 @@
     <div class="container">
       <div class="weather-app-wrapper">
         <div class="weather-app">
-          <span><i class="fa-regular fa-sun fa-2xl center" id="main-icon"></i></span>
+    
           <h1>Weather Forecast</h1>
           <div class="col-12">
           <form id="search-form">
@@ -69,10 +69,11 @@
             >
           </h3>
           <ul>
-            <li>Wind speed: 15</li>
-            <li>Humidity: 87%</li>
-            <li>Cloudy</li>
+            <li>Wind speed: <span id="wind"></span></li>
+            <li>Humidity: <span id="humidity"></span>%</li>
+            <li><span id="description"></span></li>
           </ul>
+          <img src="https://cdn.icon-icons.com/icons2/1365/PNG/512/cloud_89333.png" id="icon" >
           <div class="container">
             <div class="row g-2">
               <div class="col-6 w-25">

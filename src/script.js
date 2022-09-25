@@ -24,8 +24,8 @@ now.innerHTML = `${currentDay}, ${currentHour}:${currentMinute}`;
 function searchCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#city-input");
-  let h2 = document.querySelector("h2");
-  h2.innerHTML = `${searchInput.value}`;
+  let cityElement = document.querySelector("#your-city");
+  cityElement.innerHTML = `${searchInput.value}`;
   let cityName = `${searchInput.value}`;
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${apiKey}&units=metric`;
@@ -34,7 +34,13 @@ function searchCity(event) {
 
 function getLocationTemperature(response) {
   let locationTemperature = document.querySelector("#current-temperature");
-  locationTemperature.innerHTML = `${response.data.main.temp}`;
+  locationTemperature.innerHTML = Math.round(`${response.data.main.temp}`);
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(`${response.data.wind.speed}`);
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = `${response.data.main.humidity}`;
+  let descriptionElement = document.querySelector("#description");
+  descriptionElement.innerHTML = `${response.data.weather[0].description}`;
 }
 
 let form = document.querySelector("#search-form");

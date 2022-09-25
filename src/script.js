@@ -41,6 +41,12 @@ function getLocationTemperature(response) {
   humidityElement.innerHTML = `${response.data.main.humidity}`;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 let form = document.querySelector("#search-form");
@@ -74,6 +80,12 @@ function getCurrentTemperature(response) {
   humidityElement.innerHTML = `${response.data.main.humidity}`;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = `${response.data.weather[0].description}`;
+  let iconElement = document.querySelector("#icon");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 
 function showCurrentLocation(position) {

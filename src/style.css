@@ -62,6 +62,14 @@ body {
   position: relative;
   font-size: 16px;
 }
+#temperature-link .active {
+  color: rgb(33, 33, 33);
+  cursor: default;
+}
+
+#temperature-link .active:hover {
+  text-decoration: none;
+}
 
 #git-link {
   display: block;

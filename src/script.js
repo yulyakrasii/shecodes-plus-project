@@ -21,6 +21,36 @@ if (currentMinute < 10) {
 }
 now.innerHTML = `${currentDay}, ${currentHour}:${currentMinute}`;
 
+function displayForecast() {
+  let forecastElement = document.querySelector("#forecast");
+
+  let forecastHTML = `<div class="row">`;
+  let days = ["Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forecastHTML =
+      forecastHTML +
+      `
+              <div class="col-2">
+                <div class="weather-forecast-date">
+                  ${day}
+                </div>
+                <img
+                src="http://openweathermap.org/img/wn/04d@2x.png"
+                alt=""
+                width="36"/>
+                <div class="weather-forecast-temperatures">
+                  <span class="weather-temperature-max">18°</span>
+                  <span class="weather-temperature-min">12°</span>
+                </div>
+              </div>`;
+  });
+
+  forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
+displayForecast();
+
 function searchCity(event) {
   event.preventDefault();
   let searchInput = document.querySelector("#city-input");

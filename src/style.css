@@ -1,5 +1,6 @@
 h1 {
   font-family: "Playfair Display", serif;
+
   padding-top: 30px;
   text-align: center;
 }
@@ -29,8 +30,9 @@ p {
   text-align: center;
 }
 body {
-  background-color: #f0ece2 !important;
+  background-image: url(pinky.jpg);
 }
+
 .card {
   background-color: #dfd3c3 !important;
   display: grid;
@@ -42,8 +44,8 @@ body {
   margin: 0 auto;
   border-radius: 4px;
   font-size: 17px;
-  border-color: #dfd3c3;
-  background-color: #674f04;
+  border-color: #f3d7ca;
+  background-color: #c86b85;
 }
 #current-location-button {
   font-family: "Playfair Display", serif;
@@ -52,8 +54,8 @@ body {
   margin-top: 5px;
   border-radius: 4px;
   font-size: 17px;
-  border-color: #dfd3c3;
-  background-color: #674f04;
+  border-color: #f3d7ca;
+  background-color: #c86b85;
   color: #f0ece2;
 }
 #celsius-temperature,
@@ -78,6 +80,7 @@ body {
 .weather-app-wrapper {
   max-width: 600px;
   margin: 30px auto;
+  background-color: #e6a4b4;
 }
 .weather-app {
   padding: 20px;
@@ -97,4 +100,5 @@ ul {
   margin: 0 auto;
   width: 70px;
   height: 70px;
+  padding-bottom: 10px;
 }

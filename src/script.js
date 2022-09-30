@@ -120,6 +120,14 @@ function getCurrentTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   celsiusTemperature = response.data.main.temp;
+
+  getForecast(response.data.coord);
+}
+
+function getForecast(coordinates) {
+  let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${coordinates.lat}&lon=${coodinates.lon}&appid=${apiKey}&units=metric`;
+  axios.get(apiUrl).then(getCurrentTemperature);
 }
 
 function showCurrentLocation(position) {

@@ -30,7 +30,7 @@ p {
   text-align: center;
 }
 body {
-  background-image: url(another-try.jfif);
+  background-image: url(hello-kitty.jfif);
 }
 
 .card {
@@ -79,7 +79,8 @@ body {
   font-size: 16px;
 }
 #temperature-link .active {
-  color: rgb(33, 33, 33);
+  text-decoration: none;
+  color: #674f04;
   cursor: default;
 }
 

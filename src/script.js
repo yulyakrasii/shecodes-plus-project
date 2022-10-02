@@ -106,6 +106,8 @@ function changeCelsius(event) {
   event.preventDefault();
   let celsius = document.querySelector("#current-temperature");
   celsius.innerHTML = Math.round((celsiusTemperature * 9) / 5 + 32);
+  showCelsius.classList.remove("active");
+  showFahrenheit.classList.add("active");
 }
 let showFahrenheit = document.querySelector("#fahrenheit-temperature");
 showFahrenheit.addEventListener("click", changeCelsius);
@@ -114,6 +116,8 @@ function changeFahrenheit(event) {
   event.preventDefault();
   let fahrenheit = document.querySelector("#current-temperature");
   fahrenheit.innerHTML = Math.round(celsiusTemperature);
+  showCelsius.classList.add("active");
+  showFahrenheit.classList.remove("active");
 }
 
 let showCelsius = document.querySelector("#celsius-temperature");

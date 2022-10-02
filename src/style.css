@@ -30,7 +30,7 @@ p {
   text-align: center;
 }
 body {
-  background-image: url(pinky.jpg);
+  background-image: url(another-try.jfif);
 }
 
 .card {
@@ -46,7 +46,14 @@ body {
   font-size: 17px;
   border-color: #f3d7ca;
   background-color: #c86b85;
+  transition: all 200ms ease;
 }
+
+#search-button:hover {
+  background-color: #e6a4b4;
+  color: #674f04;
+}
+
 #current-location-button {
   font-family: "Playfair Display", serif;
   display: block;
@@ -57,7 +64,14 @@ body {
   border-color: #f3d7ca;
   background-color: #c86b85;
   color: #f0ece2;
+  transition: all 200ms ease;
 }
+
+#current-location-button:hover {
+  background-color: #e6a4b4;
+  color: #674f04;
+}
+
 #celsius-temperature,
 #fahrenheit-temperature {
   color: #674f04;
@@ -111,4 +125,18 @@ ul {
 }
 .weather-forecast-date {
   font-size: 16px;
+}
+#git-link {
+  color: #674f04 !important;
+  text-decoration: none;
+}
+#git-link:hover {
+  text-decoration: underline;
+}
+#now {
+  font-style: italic;
+}
+.end-line {
+  font-style: italic;
+  color: #674f04;
 }

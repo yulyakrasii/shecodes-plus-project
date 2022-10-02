@@ -95,6 +95,7 @@ function getLocationTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
 
   celsiusTemperature = response.data.main.temp;
+  getForecast(response.data.coord);
 }
 let celsiusTemperature = null;
 
@@ -147,10 +148,6 @@ function getForecast(coordinates) {
 }
 
 function showCurrentLocation(position) {
-  console.log(position);
-  console.log(position.coords.latitude);
-  console.log(position.coords.longitude);
-
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;

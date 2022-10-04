@@ -93,6 +93,8 @@ function getLocationTemperature(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
+  showCelsius.classList.remove("active");
+  showFahrenheit.classList.add("active");
 
   celsiusTemperature = response.data.main.temp;
   getForecast(response.data.coord);
@@ -141,6 +143,9 @@ function getCurrentTemperature(response) {
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
   celsiusTemperature = response.data.main.temp;
+
+  showCelsius.classList.remove("active");
+  showFahrenheit.classList.add("active");
 
   getForecast(response.data.coord);
 }
